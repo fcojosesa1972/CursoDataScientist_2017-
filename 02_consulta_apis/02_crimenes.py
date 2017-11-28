@@ -8,7 +8,7 @@ r_Nom = requests.get(url, param)
 salida = json.loads(r_Nom.text)
 print(salida)
 
-url_crimes = 'https://data.police.uk/api/crimes-street/all-crime'
+url_crimes = 'https://data.police.uk/api/crimes-at-location'
 param = {'format':'json', 'lng':-0.1436476, 'lat':51.4965946, 'date':'2017-04'}
 r_Crimes = requests.get(url_crimes, param)
 
